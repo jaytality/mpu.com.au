@@ -25,5 +25,5 @@ jobs:
                 composer update
             host: ${{ secrets.HOST }}
             user: root
-            pass: ${{ secrets.PRIVATE_KEY }}
+            pass: ${{ secrets.PASS }}
             args: "-tt"

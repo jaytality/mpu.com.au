@@ -34,15 +34,15 @@
                     $gq->addServers([
                         [
                             'type' => 'cs16',
-                            'host' => 'blx.jtiong.com:27016',
+                            'host' => '182.160.156.47:27016',
                             'id'   => 'csgungame',
                         ],[
                             'type' => 'cs16',
-                            'host' => 'blx.jtiong.com:27015',
+                            'host' => '182.160.156.47:27015',
                             'id'   => 'csbloodstrike',
                         ],[
                             'type' => 'rust',
-                            'host' => 'blx.jtiong.com:28015',
+                            'host' => '182.160.156.47:28015',
                             'id'   => 'rustmonthly',
                         ]
                     ]);

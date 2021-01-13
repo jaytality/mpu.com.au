@@ -11,3 +11,9 @@ $base->get("/history", function () {
     $controller = new spark\Controllers\AboutController;
     return $controller->{'history'}();
 });
+
+// GET /staff
+$base->get("/staff", function () {
+    $controller = new spark\Controllers\AboutController;
+    return $controller->{'staff'}();
+});

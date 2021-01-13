@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  web:
+    external_links:
+      - core_db
+    container_name: ${PROJECTNAME}_dev
+    environment:
+      VIRTUAL_HOST: ${DEV_URL}
+      LETSENCRYPT_HOST: ${DEV_URL}
+      LETSENCRYPT_MAIL: ${DEV_SSL}
+
+networks:
+    default:
+      external:
+        name: ${DEV_NET}

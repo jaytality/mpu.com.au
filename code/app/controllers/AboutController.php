@@ -31,5 +31,15 @@ class AboutController extends Controller
 
         $this->view->load($this->viewOpts, $this->viewData);
     }
+
+    function staff()
+    {
+		$this->viewOpts['page']['layout'] = 'default';
+        $this->viewOpts['page']['content'] = 'about/staff';
+        $this->viewOpts['page']['section'] = 'info';
+        $this->viewOpts['page']['title'] = 'Our Staff';
+
+        $this->view->load($this->viewOpts, $this->viewData);
+    }
 }
 

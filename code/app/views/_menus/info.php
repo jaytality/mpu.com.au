@@ -12,7 +12,7 @@
                         <a class="nav-link" href="/history">History</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/team">The Team</a>
+                        <a class="nav-link" href="/staff">Our Staff</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/events">Events</a>

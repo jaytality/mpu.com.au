@@ -149,6 +149,56 @@
                             </ul>
                         </td>
                     </tr>
+                    <tr>
+                        <td><b>2006</b></td>
+                        <td>
+                            <ul>
+                                <li><b>March</b> - MPU helped support Brotherhood of Network Gamers (BONG) for their MarchLAN 3 event</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>2007</b></td>
+                        <td>
+                            <ul>
+                                <li><b>22 January</b> - MPU announces that it's finally closing it's doors (unless someone comes up with an idea)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>2012</b></td>
+                        <td>
+                            <ul>
+                                <li><b>April</b> - Jaytizzle (Jay) and missingo (Ben) take over running Multiplayer United</li>
+                                <li><b>20 October</b> - MPU rolls out network, administration and operations for MaqLAN #2</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>2013</b></td>
+                        <td>
+                            <ul>
+                                <li><b>19 July</b> - MPU is involved in rolling out the first PAX Australia PC Freeplay area. <a href="https://www.youtube.com/watch?v=ZWVk3uUnnfc">We even recorded it on YouTube</a>.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>2016</b></td>
+                        <td>
+                            <ul>
+                                <li>MPU assist eLeague in Sydney, Australia for eSports events</li>
+                                <li><b>December</b> MPU enters a hiatus</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>2021</b></td>
+                        <td>
+                            <ul>
+                                <li>MPU returns from hiatus, as an online gaming community</li>
+                            </ul>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

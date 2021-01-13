@@ -6,7 +6,7 @@ namespace spark\Controllers;
 
 use \spark\Core\Controller as Controller;
 
-use \spark\Core\Models\HomeModel as HomeModel;
+use \spark\Models\HomeModel;
 
 use \R as R;
 

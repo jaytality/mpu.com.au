@@ -18,6 +18,7 @@ jobs:
           with:
             command: |
                 cd /root/sites/mpu.com.au
+                ls -alh
                 git pull
                 chmod a+x *.sh
                 cd code

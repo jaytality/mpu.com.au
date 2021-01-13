@@ -23,6 +23,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <?php
+                $viewOpts['page']['section'] = empty($viewOpts['page']['section']) ? '' : $viewOpts['page']['section'];
+                ?>
+
                 <div class="collapse navbar-collapse" id="mainmenu">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item<?=$viewOpts['page']['section'] == 'home' ? ' active' : ''?>">

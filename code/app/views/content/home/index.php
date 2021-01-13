@@ -3,19 +3,22 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <h5>Community News</h5>
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">We're back online!</h4>
-                    <h6 class="card-subtitle mb-2 text-muted">Jaytizzle - 13-JAN-2021 11:12am</h6>
-                    <p class="card-text">
-                        It's been a while folks - but after a huge hiatus, we're finally back online. MPU
-                        lost its direction for a little while, followed by the shenanigans of COVID in 2020;
-                        I had to come to a decision of whether or not I'd let MPU just die out, or continue
-                        on with it.
-                    </p>
+            <?php
+            foreach ($posts as $post) {
+                ?>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title"><?=$post->title->rendered?></h4>
+                        <h6 class="card-subtitle mb-2 text-muted"><small><?=date('d/M/Y @ h:i:s', strtotime($post->date))?></small></h6>
+                        <p class="card-text">
+                            <?=$post->excerpt->rendered?>
+                        </p>
+                    </div>
                 </div>
-            </div>
+                <br />
+                <?php
+            }
+            ?>
         </div>
 
         <div class="col-md-6">

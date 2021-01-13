@@ -7,6 +7,7 @@ namespace spark\Controllers;
 use \spark\Core\Controller as Controller;
 
 use \spark\Models\HomeModel;
+use \spark\Models\BlogModel;
 
 use \R as R;
 
@@ -14,6 +15,8 @@ class HomeController extends Controller
 {
     function index()
     {
+        $this->viewData['posts'] = BlogModel::getPosts();
+
 		$this->viewOpts['page']['layout']  = 'default';
         $this->viewOpts['page']['content'] = 'home/index';
         $this->viewOpts['page']['section'] = 'home';

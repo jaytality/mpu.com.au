@@ -22,7 +22,7 @@ jobs:
                 chmod a+x *.sh
                 cd code
                 composer update
-            host: ${{ secrets.STG_HOST }}
+            host: ${{ secrets.HOST }}
             user: root
-            pass: ${{ secrets.STG_PASS }}
+            pass: ${{ secrets.PRIVATE_KEY }}
             args: "-tt"

@@ -30,29 +30,20 @@
                     <?php
                     $gq = new \GameQ\GameQ();
                     $gq->setOption('timeout', 5);
-                    $gq->setOption('debug', false);
+                    $gq->setOption('debug', true);
                     $gq->addServers([
                         [
                             'type'    => 'cs16',
                             'host'    => '182.160.156.47:27016',
                             'id'      => 'csgungame',
-                            `options` => [
-                                'debug' => true
-                            ]
                         ],[
                             'type' => 'cs16',
                             'host' => '182.160.156.47:27015',
                             'id'   => 'csbloodstrike',
-                            `options` => [
-                                'debug' => true
-                            ]
                         ],[
                             'type' => 'rust',
                             'host' => '182.160.156.47:28015',
                             'id'   => 'rustmonthly',
-                            `options` => [
-                                'debug' => true
-                            ]
                         ]
                     ]);
 

@@ -74,7 +74,6 @@
                         </tbody>
                     </table>
                     <br />
-                    <?='<pre>' . print_r($servers, true) . '</pre>'?>
                 </div>
             </div>
 

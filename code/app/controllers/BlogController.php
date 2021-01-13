@@ -23,8 +23,8 @@ class BlogController extends Controller
 
 		$this->viewOpts['page']['layout']  = 'default';
         $this->viewOpts['page']['content'] = 'blog/category';
-        $this->viewOpts['page']['section'] = 'info';
-        $this->viewOpts['page']['title']   = 'Info';
+        $this->viewOpts['page']['section'] = 'sections';
+        $this->viewOpts['page']['title']   = 'Blog';
 
         $this->viewData['category'] = $category;
         $this->viewData['posts'] = BlogModel::getCategoryPosts($category->id);

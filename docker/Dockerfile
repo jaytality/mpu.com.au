@@ -25,9 +25,4 @@ COPY vhost.conf /etc/apache2/sites-available/000-default.conf
 RUN touch /var/www/error.log /var/www/access.log
 RUN chown www-data:www-data /var/www/error.log /var/www/access.log
 
-##Installing composer
-RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-RUN php composer-setup.php
-RUN rm -f composer-setup.php
-
 

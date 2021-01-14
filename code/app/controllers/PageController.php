@@ -18,21 +18,22 @@ class PageController extends Controller
     function page($slug = '')
     {
         $page = PageModel::getPageBySlug($slug);
-        $page = $page[0];
+        $page = (!empty($page)) ? $page[0] : null;
         $this->viewData['page'] = $page;
 
         $this->viewOpts['page']['layout']  = 'default';
 
-        if (empty($slug)) {
-            $this->viewOpts['page']['content'] = 'home/index';
+        if (empty($page)) {
+            $home = new \spark\Controllers\HomeController;
+            $home->index();
         } else {
             $this->viewOpts['page']['content'] = 'home/page';
+
+            $this->viewOpts['page']['section'] = 'sections';
+            $this->viewOpts['page']['title']   = $page->title->rendered;
+
+            $this->view->load($this->viewOpts, $this->viewData);
         }
-
-        $this->viewOpts['page']['section'] = 'sections';
-        $this->viewOpts['page']['title']   = $page->title->rendered;
-
-        $this->view->load($this->viewOpts, $this->viewData);
     }
 }
 

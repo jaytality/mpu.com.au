@@ -12,12 +12,16 @@
                     if (!empty($post->featured_media)) {
                         $image = \spark\Models\BlogModel::getFeaturedMediaUrl($post->featured_media);
                         ?>
-                        <img src="<?=$image->source_url?>" class="card-img-top" alt="<?=$post->title->rendered?>">
+                        <a href="/blog/post/<?=$post->slug?>">
+                            <img src="<?=$image->source_url?>" class="card-img-top" alt="<?=$post->title->rendered?>">
+                        </a>
                         <?php
                     }
                     ?>
                     <div class="card-body">
-                        <h4 class="card-title"><?=$post->title->rendered?></h4>
+                        <h4 class="card-title">
+                            <a href="/blog/post/<?=$post->slug?>"><?=$post->title->rendered?></a>
+                        </h4>
                         <h6 class="card-subtitle mb-2 text-muted"><small><?=date('d/M/Y @ h:i:s', strtotime($post->date))?></small></h6>
                         <p class="card-text">
                             <?=$post->excerpt->rendered?>

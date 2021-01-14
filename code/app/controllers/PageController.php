@@ -29,7 +29,7 @@ class PageController extends Controller
         } else {
             $this->viewOpts['page']['content'] = 'home/page';
 
-            $this->viewOpts['page']['section'] = 'sections';
+            $this->viewOpts['page']['section'] = 'info';
             $this->viewOpts['page']['title']   = $page->title->rendered;
 
             $this->view->load($this->viewOpts, $this->viewData);

@@ -38,16 +38,16 @@
                         <td>
                             <ul>
                                 <li>Wireplay Frag U is run - with MPU and id software at an event with Tim Willits</li>
-                                <li><b>31 January</b> - LAN Party</li>
-                                <li><b>07 March</b> - LAN Party</li>
-                                <li><b>18 April</b> - LAN Party</li>
-                                <li><b>16 May</b> - LAN Party - surpasses 50 players (54)</li>
-                                <li><b>20 June</b> - LAN Party - surpasses 70 players (74)</li>
-                                <li><b>01 August</b> - LAN Party</li>
-                                <li><b>12 September</b> - LAN Party</li>
-                                <li><b>17 October</b> - LAN Party @ Souths Leagues Club</li>
-                                <li><b>07 November</b> - LAN Party @ Balmain Leagues Club</li>
-                                <li><b>19 December</b> - LAN Party @ Australian Technology Park - surpasses 200 players (203)</li>
+                                <li><b>31 January</b>: LAN Party</li>
+                                <li><b>07 March</b>: LAN Party</li>
+                                <li><b>18 April</b>: LAN Party</li>
+                                <li><b>16 May</b>: LAN Party - surpasses 50 players (54)</li>
+                                <li><b>20 June</b>: LAN Party - surpasses 70 players (74)</li>
+                                <li><b>01 August</b>: LAN Party</li>
+                                <li><b>12 September</b>: LAN Party</li>
+                                <li><b>17 October</b>: LAN Party @ Souths Leagues Club</li>
+                                <li><b>07 November</b>: LAN Party @ Balmain Leagues Club</li>
+                                <li><b>19 December</b>: LAN Party @ Australian Technology Park - surpasses 200 players (203)</li>
                             </ul>
                         </td>
                     </tr>
@@ -57,11 +57,11 @@
                             <ul>
                                 <li><b>January</b> - Sydney Gamers League (SGL) starts as a secondary LAN group from MPU veterans</li>
                                 <li><b>06 February</b> - MPU is in <a href="https://web.archive.org/web/19990427082014/http://www.smh.com.au/icon/990206/Games/games1.html">Sydney Morning Herald's Icon section</a></li>
-                                <li><b>April</b> - LAN Party</li>
-                                <li><b>May</b> - LAN Party @ Parramatta Masonic Club</li>
-                                <li><b>August</b> - LAN Party @ Parramatta Masonic Club</li>
-                                <li><b>September</b> - LAN Party @ Parramatta Masonic Club</li>
-                                <li><b>December</b> - LAN Party @ Parramatta Masonic Club</li>
+                                <li><b>April</b>: LAN Party</li>
+                                <li><b>May</b>: LAN Party @ Parramatta Masonic Club</li>
+                                <li><b>August</b>: LAN Party @ Parramatta Masonic Club</li>
+                                <li><b>September</b>: LAN Party @ Parramatta Masonic Club</li>
+                                <li><b>December</b>: LAN Party @ Parramatta Masonic Club</li>
                             </ul>
                         </td>
                     </tr>
@@ -69,12 +69,12 @@
                         <td><b>2000</b></td>
                         <td>
                             <ul>
-                                <li><b>15 July</b> - LAN Party</li>
-                                <li><b>12 August</b> - LAN Party</li>
-                                <li><b>16 September</b> - LAN Party</li>
-                                <li><b>07 October</b> - LAN Party</li>
-                                <li><b>11 November</b> - LAN Party</li>
-                                <li><b>16 December</b> - LAN Party</li>
+                                <li><b>15 July</b>: LAN Party</li>
+                                <li><b>12 August</b>: LAN Party</li>
+                                <li><b>16 September</b>: LAN Party</li>
+                                <li><b>07 October</b>: LAN Party</li>
+                                <li><b>11 November</b>: LAN Party</li>
+                                <li><b>16 December</b>: LAN Party</li>
                             </ul>
                         </td>
                     </tr>
@@ -82,15 +82,15 @@
                         <td><b>2001</b></td>
                         <td>
                             <ul>
-                                <li><b>January</b> - LAN Party</li>
-                                <li><b>February</b> - LAN Party</li>
-                                <li><b>March</b> - LAN Party</li>
-                                <li><b>July</b> - LAN Party</li>
-                                <li><b>August</b> - LAN Party</li>
-                                <li><b>15 September</b> - LAN Party</li>
-                                <li><b>06 October</b> - LAN Party</li>
-                                <li><b>17 November</b> - LAN Party</li>
-                                <li><b>15 December</b> - LAN Party</li>
+                                <li><b>January</b>: LAN Party</li>
+                                <li><b>February</b>: LAN Party</li>
+                                <li><b>March</b>: LAN Party</li>
+                                <li><b>July</b>: LAN Party</li>
+                                <li><b>August</b>: LAN Party</li>
+                                <li><b>15 September</b>: LAN Party</li>
+                                <li><b>06 October</b>: LAN Party</li>
+                                <li><b>17 November</b>: LAN Party</li>
+                                <li><b>15 December</b>: LAN Party</li>
                             </ul>
                         </td>
                     </tr>
@@ -98,15 +98,15 @@
                         <td><b>2002</b></td>
                         <td>
                             <ul>
-                                <li><b>09 February</b> - LAN Party</li>
-                                <li><b>09 March</b> - LAN Party</li>
-                                <li><b>20 April</b> - LAN Party</li>
-                                <li><b>08 June</b> - LAN Party</li>
-                                <li><b>20 July</b> - LAN Party</li>
-                                <li><b>24 August</b> - LAN Party</li>
-                                <li><b>12 October</b> - LAN Party</li>
-                                <li><b>16 November</b> - LAN Party</li>
-                                <li><b>14 December</b> - LAN Party</li>
+                                <li><b>09 February</b>: LAN Party</li>
+                                <li><b>09 March</b>: LAN Party</li>
+                                <li><b>20 April</b>: LAN Party</li>
+                                <li><b>08 June</b>: LAN Party</li>
+                                <li><b>20 July</b>: LAN Party</li>
+                                <li><b>24 August</b>: LAN Party</li>
+                                <li><b>12 October</b>: LAN Party</li>
+                                <li><b>16 November</b>: LAN Party</li>
+                                <li><b>14 December</b>: LAN Party</li>
                             </ul>
                         </td>
                     </tr>
@@ -114,14 +114,14 @@
                         <td><b>2003</b></td>
                         <td>
                             <ul>
-                                <li><b>March</b> - LAN Party</li>
-                                <li><b>May</b> - LAN Party</li>
-                                <li><b>June</b> - LAN Party</li>
-                                <li><b>August</b> - LAN Party</li>
-                                <li><b>September</b> - LAN Party</li>
-                                <li><b>October</b> - LAN Party</li>
-                                <li><b>November</b> - LAN Party</li>
-                                <li><b>December</b> - LAN Party</li>
+                                <li><b>March</b>: LAN Party</li>
+                                <li><b>May</b>: LAN Party</li>
+                                <li><b>June</b>: LAN Party</li>
+                                <li><b>August</b>: LAN Party</li>
+                                <li><b>September</b>: LAN Party</li>
+                                <li><b>October</b>: LAN Party</li>
+                                <li><b>November</b>: LAN Party</li>
+                                <li><b>December</b>: LAN Party</li>
                             </ul>
                         </td>
                     </tr>
@@ -129,11 +129,11 @@
                         <td><b>2004</b></td>
                         <td>
                             <ul>
-                                <li><b>February</b> - LAN Party</li>
-                                <li><b>March</b> - LAN Party</li>
-                                <li><b>April</b> - LAN Party</li>
-                                <li><b>May</b> - LAN Party</li>
-                                <li><b>June</b> - LAN Party</li>
+                                <li><b>February</b>: LAN Party</li>
+                                <li><b>March</b>: LAN Party</li>
+                                <li><b>April</b>: LAN Party</li>
+                                <li><b>May</b>: LAN Party</li>
+                                <li><b>June</b>: LAN Party</li>
                             </ul>
                         </td>
                     </tr>
@@ -141,10 +141,10 @@
                         <td><b>2005</b></td>
                         <td>
                             <ul>
-                                <li><b>April</b> - LAN Party</li>
-                                <li><b>May</b> - LAN Party</li>
-                                <li><b>July</b> - LAN Party</li>
-                                <li><b>August</b> - LAN Party</li>
+                                <li><b>April</b>: LAN Party</li>
+                                <li><b>May</b>: LAN Party</li>
+                                <li><b>July</b>: LAN Party</li>
+                                <li><b>August</b>: LAN Party</li>
                                 <li><b class="text-danger">03 October</b> - MPU calls "Game Over!" on LAN Parties and halts it's own LAN Party events.</li>
                             </ul>
                         </td>

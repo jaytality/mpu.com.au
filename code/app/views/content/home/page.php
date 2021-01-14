@@ -8,5 +8,3 @@
         </div>
     </div>
 </div>
-
-<pre><?=print_r($page, true)?></pre>

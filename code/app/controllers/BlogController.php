@@ -21,12 +21,31 @@ class BlogController extends Controller
             die ('error retrieving category');
         }
 
-		$this->viewOpts['page']['layout']  = 'default';
+        $this->viewOpts['page']['layout']  = 'default';
         $this->viewOpts['page']['content'] = 'blog/category';
         $this->viewOpts['page']['section'] = 'sections';
         $this->viewOpts['page']['title']   = 'Blog';
 
         $this->viewData['category'] = $category;
+        $this->viewData['posts'] = BlogModel::getCategoryPosts($category->id);
+
+        $this->view->load($this->viewOpts, $this->viewData);
+    }
+
+    function post($slug)
+    {
+        // slug actually contains format $id-$slug
+        $id = explode('-', $slug);
+        $id = $id[0];
+
+        $post = BlogModel::getPost($id);
+
+        $this->viewOpts['page']['layout']  = 'default';
+        $this->viewOpts['page']['content'] = 'blog/post';
+        $this->viewOpts['page']['section'] = 'sections';
+        $this->viewOpts['page']['title']   = $post->title->rendered;
+
+        $this->viewData['post'] = $post;
         $this->viewData['posts'] = BlogModel::getCategoryPosts($category->id);
 
         $this->view->load($this->viewOpts, $this->viewData);

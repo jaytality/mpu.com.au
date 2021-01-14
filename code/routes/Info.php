@@ -2,8 +2,8 @@
 
 // GET /about
 $base->get("/about", function () {
-    $controller = new spark\Controllers\AboutController;
-    return $controller->{'about'}();
+    $controller = new spark\Controllers\PageController;
+    return $controller->{'page'}('history');
 });
 
 // GET /history

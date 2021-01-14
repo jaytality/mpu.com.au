@@ -49,3 +49,8 @@ hr {
     vertical-align: bottom;
     border-bottom: 2px solid #444;
 }
+
+.wp-block-table > table tbody tr:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.075);
+}

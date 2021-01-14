@@ -3,7 +3,7 @@
 // GET /about
 $base->get("/about", function () {
     $controller = new spark\Controllers\AboutController;
-    return $controller->{'index'}();
+    return $controller->{'about'}();
 });
 
 // GET /history
@@ -16,4 +16,10 @@ $base->get("/history", function () {
 $base->get("/staff", function () {
     $controller = new spark\Controllers\AboutController;
     return $controller->{'staff'}();
+});
+
+// GET /donations
+$base->get("/donations", function () {
+    $controller = new spark\Controllers\PageController;
+    return $controller->{'page'}('donations');
 });

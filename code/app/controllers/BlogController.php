@@ -46,7 +46,6 @@ class BlogController extends Controller
         $this->viewOpts['page']['title']   = $post->title->rendered;
 
         $this->viewData['post'] = $post;
-        $this->viewData['posts'] = BlogModel::getCategoryPosts($category->id);
 
         $this->view->load($this->viewOpts, $this->viewData);
     }

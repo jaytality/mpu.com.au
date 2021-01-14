@@ -9,6 +9,19 @@ use \R as R;
 class BlogModel extends Model
 {
     /**
+     * get the details of an author by their $id
+     *
+     * @param integer $id
+     * @return array $author
+     */
+    public static function getAuthorById($id = 0) {
+        $author = file_get_contents('https://control.mpu.com.au/wp-json/wp/v2/users/' . $id);
+        $author = json_decode($author);
+
+        return $author;
+    }
+
+    /**
      * get posts available (all categories) from wordpress - default limit of posts is 10,
      * but customisable as needed
      *
@@ -24,6 +37,20 @@ class BlogModel extends Model
     }
 
     /**
+     * fetch a wordpress post and details by $id
+     *
+     * @param integer $id
+     * @return array $post
+     */
+    public static function getPost($id = 0)
+    {
+        $post = file_get_contents('https://control.mpu.com.au/wp-json/wp/v2/posts/' . $id);
+        $post = json_decode($post);
+
+        return $post;
+    }
+
+    /**
      * get a list of categories available from wordpress
      *
      * @return array $categories
@@ -33,6 +60,19 @@ class BlogModel extends Model
         $categories = json_decode($categories);
 
         return $categories;
+    }
+
+    /**
+     * fetch the details of a category by $id from wordpress
+     *
+     * @param integer $id
+     * @return array $category
+     */
+    public static function getCategoryById($id = 0) {
+        $category = file_get_contents('https://control.mpu.com.au/wp-json/wp/v2/categories/' . $id);
+        $category = json_decode($category);
+
+        return $category;
     }
 
     /**

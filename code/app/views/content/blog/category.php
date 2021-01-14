@@ -7,7 +7,15 @@
             <?php
             foreach ($posts as $post) {
                 ?>
-                <div class="card">
+                <div class="card p-0">
+                    <?php
+                    if (!empty($post->featured_media)) {
+                        $image = \spark\Models\BlogModel::getFeaturedMediaUrl($post->featured_media);
+                        ?>
+                        <img src="<?=$image->source_url?>" class="card-img-top" alt="<?=$post->title->rendered?>">
+                        <?php
+                    }
+                    ?>
                     <div class="card-body">
                         <h4 class="card-title"><?=$post->title->rendered?></h4>
                         <h6 class="card-subtitle mb-2 text-muted"><small><?=date('d/M/Y @ h:i:s', strtotime($post->date))?></small></h6>

@@ -41,6 +41,13 @@ class BlogModel extends Model
 
         return $posts;
     }
+
+    public static function getFeaturedMediaUrl($id = 0) {
+        $image = file_get_contents('https://control.mpu.com.au/wp-json/wp/v2/media/' . $id);
+        $image = json_decode($image);
+
+        return $image;
+    }
 }
 
 // end of file

@@ -2,14 +2,14 @@
 
 // GET /about
 $base->get("/about", function () {
-    $controller = new spark\Controllers\PageController;
-    return $controller->{'page'}('history');
+    $controller = new spark\Controllers\AboutController;
+    return $controller->{'about'}();
 });
 
 // GET /history
 $base->get("/history", function () {
-    $controller = new spark\Controllers\AboutController;
-    return $controller->{'history'}();
+    $controller = new spark\Controllers\PageController;
+    return $controller->{'page'}('history');
 });
 
 // GET /staff

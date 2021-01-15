@@ -50,28 +50,7 @@
             <div class="row">
                 <div class="col">
                     <h5>Game Server Status</h5>
-                    <?php
-                    $gq = new \GameQ\GameQ();
-                    $gq->setOption('timeout', 5);
-                    $gq->setOption('debug', true);
-                    $gq->addServers([
-                        [
-                            'type'    => 'cs16',
-                            'host'    => '182.160.156.47:27016',
-                            'id'      => 'csgungame',
-                        ],[
-                            'type' => 'cs16',
-                            'host' => '182.160.156.47:27015',
-                            'id'   => 'csbloodstrike',
-                        ],[
-                            'type' => 'rust',
-                            'host' => '182.160.156.47:28015',
-                            'id'   => 'rustmonthly',
-                        ]
-                    ]);
-
-                    $servers = $gq->process();
-                    ?>
+                    <small class="text-muted">Click on a Server Name to join! (Steam/Game Launcher may be Required)</small>
                     <table class="table table-condensed table-hover">
                         <thead>
                             <tr>
@@ -83,15 +62,25 @@
                         <tbody>
                             <?php
                                 foreach ($servers as $server) {
-                                    if ($server['gq_online'] == TRUE) {
                                     ?>
                                         <tr>
-                                            <td><small><?=$server['gq_hostname']?></small></td>
-                                            <td class="text-center"><small><?=count($server['players']) . '/' . $server['gq_maxplayers']?></small></td>
-                                            <td><span class="badge badge-success">ONLINE</span></td>
+                                            <td><small><a href="<?=$server['joinlink']?>"><?=$server['hostname']?></a></small></td>
+                                            <td class="text-center"><small><?=$server['numplayers'] . '/' . $server['maxplayers']?></small></td>
+                                            <td>
+                                                <?php
+                                                if ($server['online'] == TRUE) {
+                                                    ?>
+                                                        <span class="badge badge-success">ONLINE</span></td>
+                                                    <?php
+                                                } else {
+                                                    ?>
+                                                        <span class="badge badge-danger">OFFLINE</span></td>
+                                                    <?php
+                                                }
+                                                ?>
+                                            </td>
                                         </tr>
                                     <?php
-                                    }
                                 }
                             ?>
                         </tbody>

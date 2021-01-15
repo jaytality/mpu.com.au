@@ -44,6 +44,11 @@
         <div class="col-md-6">
             <div class="row">
                 <div class="col">
+                <a href="https://www.patreon.com/bePatron?u=368007" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
                 <iframe src="https://discord.com/widget?id=123947704198889472&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                 </div>
             </div>

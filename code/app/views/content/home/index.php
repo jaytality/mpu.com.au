@@ -64,7 +64,7 @@
                                 foreach ($servers as $server) {
                                     ?>
                                         <tr>
-                                            <td><small><?=$server['hostname']?></small></td>
+                                            <td><small><a href="<?=$server['joinlink']?>"><?=$server['hostname']?></a></small></td>
                                             <td class="text-center"><small><?=$server['numplayers'] . '/' . $server['maxplayers']?></small></td>
                                             <td>
                                                 <?php

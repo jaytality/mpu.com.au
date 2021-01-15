@@ -12,7 +12,7 @@ use \R as R;
 
 class AboutController extends Controller
 {
-    function index()
+    function about()
     {
 		$this->viewOpts['page']['layout'] = 'default';
         $this->viewOpts['page']['content'] = 'about/index';

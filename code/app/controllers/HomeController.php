@@ -8,6 +8,7 @@ use \spark\Core\Controller as Controller;
 
 use \spark\Models\HomeModel;
 use \spark\Models\BlogModel;
+use \spark\Models\GameModel;
 
 use \R as R;
 
@@ -16,6 +17,7 @@ class HomeController extends Controller
     function index()
     {
         $this->viewData['posts'] = BlogModel::getPosts();
+        $this->viewData['servers'] = GameModel::getServersInfo();
 
 		$this->viewOpts['page']['layout']  = 'default';
         $this->viewOpts['page']['content'] = 'home/index';

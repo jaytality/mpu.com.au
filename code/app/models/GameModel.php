@@ -8,12 +8,10 @@ use \R as R;
 
 class GameModel extends Model
 {
-    public static function create($data)
+    public static function getServersInfo()
     {
-        $newRecord = R::xdispense('tbl_records');
-        $newRecord['time'] = time();
-        $newRecord['message'] = "Hello";
-        R::store($newRecord);
+        $servers = R::find('game_servers');
+        return $servers;
     }
 }
 

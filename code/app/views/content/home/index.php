@@ -44,7 +44,22 @@
         <div class="col-md-6">
             <div class="row">
                 <div class="col">
-                <a href="https://www.patreon.com/bePatron?u=368007" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Like what we're doing? Support Us!</h4>
+
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Running game servers, and keeping things online actually does cost quite a bit of money - and we'd really appreciate your help in keeping a bit of Aussie
+                                Gaming History online!
+                            </h6>
+
+                            <p class="card-text">
+                                <a href="https://www.patreon.com/bePatron?u=368007" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
+                                <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+                            </p>
+                        </div>
+                    </div>
+                    <br />
                 </div>
             </div>
             <div class="row">

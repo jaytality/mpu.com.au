@@ -13,7 +13,7 @@ require 'vendor/autoload.php';
 require ROOT.'/config.php';
 require ROOT.'/R.php';
 
-R::setup(getConfig('database.type').':host='.getConfig('database.host').';dbname='.getConfig('database.name'), getConfig('database.user'), getConfig('database.pass'));
+R::setup(getConfig('database.type').':host=172.25.0.200;dbname='.getConfig('database.name'), getConfig('database.user'), getConfig('database.pass'));
 R::ext('xdispense', function ($type) {
     return R::getRedBean()->dispense($type);
 });

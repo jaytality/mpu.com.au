@@ -13,7 +13,7 @@ require 'vendor/autoload.php';
 require ROOT.'/config.php';
 require ROOT.'/R.php';
 
-R::setup(getConfig('database.type').':host='.getConfig('database.host').';dbname='.getConfig('database.name'), getConfig('database.user'), getConfig('database.pass'));
+R::setup(getConfig('database.type').':host=172.25.0.200;dbname='.getConfig('database.name'), getConfig('database.user'), getConfig('database.pass'));
 R::ext('xdispense', function ($type) {
     return R::getRedBean()->dispense($type);
 });
@@ -22,9 +22,9 @@ R::ext('xdispense', function ($type) {
 
 $serverList = [
     [
-        'type'    => 'cs16',
-        'host'    => '182.160.156.47:27016',
-        'id'      => 'csgungame',
+        'type' => 'cs16',
+        'host' => '182.160.156.47:27016',
+        'id'   => 'csgungame',
     ],[
         'type' => 'cs16',
         'host' => '182.160.156.47:27015',
@@ -33,6 +33,10 @@ $serverList = [
         'type' => 'rust',
         'host' => '182.160.156.47:28015',
         'id'   => 'rustmonthly',
+    ],[
+        'type' => 'rust',
+        'host' => '182.160.156.47:29015',
+        'id'   => 'rustvanilla',
     ]
 ];
 

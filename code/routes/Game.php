@@ -2,12 +2,12 @@
 
 // GET /game
 $base->get("/game", function () {
-    $controller = new spark\Controllers\GameController;
-    return $controller->{'index'}();
+    $controller = new spark\Controllers\PageController;
+    return $controller->{'page'}('game');
 });
 
 // GET /game/:shortname
 $base->get("/game/:game", function ($game) {
-    $controller = new spark\Controllers\GameController;
-    return $controller->{'game'}($game);
+    $controller = new spark\Controllers\PageController;
+    return $controller->{'page'}('game-' . $game);
 });

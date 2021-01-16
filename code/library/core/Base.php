@@ -45,6 +45,11 @@ class Base
         if ($this->uri != "/") {
             $this->uri = preg_replace('{/$}', '', $this->uri);
         }
+
+        // we don't want fbclid bullshit to interfere with the URLs either
+        if (strpos($this->uri, 'fbclid=') !== FALSE) {
+            $this->uri = strtok($this->uri, '?');
+        }
     }
 
     /**

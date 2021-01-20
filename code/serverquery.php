@@ -37,6 +37,10 @@ $serverList = [
         'type' => 'rust',
         'host' => '182.160.156.47:29015',
         'id'   => 'rustvanilla',
+    ],[
+        'type' => 'rust',
+        'host' => '182.160.156.47:28017',
+        'id'   => 'solos',
     ]
 ];
 

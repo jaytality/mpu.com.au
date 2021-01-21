@@ -34,3 +34,9 @@ hr {
     width: 100%;
     margin-bottom: 1rem;
 }
+
+.blockquote {
+    padding: 2rem 2rem 1rem 2rem;
+    border-bottom: 1px solid #444;
+    border-top: 1px solid #444;
+}

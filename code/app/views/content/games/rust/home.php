@@ -38,7 +38,7 @@
                             </h5>
 
                             <div class="card-text">
-                                <?=$server->description?>
+                                <small><?=$server->description?></small>
                             </div>
                         </div>
                         <div class="card-footer text-muted">

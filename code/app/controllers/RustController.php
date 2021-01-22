@@ -21,7 +21,7 @@ class RustController extends Controller
         $this->viewOpts['page']['title']   = 'Rust';
 
         $this->viewData['servers'] = GameModel::getServersByType('rust');
-        $this->viewData['soloplayers'] = RustModel::getSoloPlayers();
+        $this->viewData['soloplayers'] = RustModel::getSoloPlayerStats();
         // $this->viewData['trioplayers'] = RustModel::getTrioPlayers();
         // $this->viewData['monthlyplayers'] = RustModel::getMonthlyPlayers();
 

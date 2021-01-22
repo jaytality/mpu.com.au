@@ -34,15 +34,11 @@
                         <!-- banner image can go here -->
                         <div class="card-body">
                             <h5 class="card-subtitle mb-2 text-muted">
-                                Server Byline
+                                <?=$server->byline?>
                             </h5>
 
                             <div class="card-text">
-                                "Description field"
-                                <br />
-                                <ul>
-                                    <li>Feature Points</li>
-                                </ul>
+                                <small><?=$server->description?></small>
                             </div>
                         </div>
                         <div class="card-footer text-muted">

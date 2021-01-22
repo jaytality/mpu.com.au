@@ -81,6 +81,7 @@
                 <thead>
                     <tr>
                         <th>Player</th>
+                        <th>Updated</th>
                         <th>Kills</th>
                         <th>Deaths</th>
                         <th>Suicides</th>
@@ -97,13 +98,18 @@
                         ?>
                         <tr>
                             <td><?=$player['name']?></td>
-                            <td><?=$stats->Kills?></td>
-                            <td><?=$stats->Deaths?></td>
-                            <td><?=$stats->Suicides?></td>
-                            <td><?=$stats->Shots?></td>
-                            <td><?=$stats->Headshots?></td>
-                            <td><?=$stats->CraftedItems?></td>
-                            <td><?=$stats->RepairedItems?></td>
+                            <td>
+                                <small>
+                                    <?=date('d/M/Y H:i:s', $stats->LastUpdate)?>
+                                </small>
+                            </td>
+                            <td class="text-center"><?=$stats->Kills?></td>
+                            <td class="text-center"><?=$stats->Deaths?></td>
+                            <td class="text-center"><?=$stats->Suicides?></td>
+                            <td class="text-center"><?=$stats->Shots?></td>
+                            <td class="text-center"><?=$stats->Headshots?></td>
+                            <td class="text-center"><?=$stats->CraftedItems?></td>
+                            <td class="text-center"><?=$stats->RepairedItems?></td>
                         </tr>
                         <?php
                     }

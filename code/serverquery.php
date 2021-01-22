@@ -31,12 +31,12 @@ $serverList = [
         'id'   => 'csbloodstrike',
     ],[
         'type' => 'rust',
-        'host' => '182.160.156.47:28015',
-        'id'   => 'rustmonthly',
-    ],[
-        'type' => 'rust',
         'host' => '182.160.156.47:29015',
         'id'   => 'rustvanilla',
+    ],[
+        'type' => 'rust',
+        'host' => '182.160.156.47:28017',
+        'id'   => 'solos',
     ]
 ];
 
@@ -56,22 +56,22 @@ foreach ($servers as $server) {
     if (empty($serverCheck)) {
         $newServer = R::xdispense('game_servers');
         $newServer['lastupdated'] = time();
-        $newServer['hostname'] = $server['gq_hostname'];
-        $newServer['type'] = $server['gq_gametype'];
-        $newServer['joinlink'] = $server['gq_joinlink'];
-        $newServer['maxplayers'] = $server['gq_maxplayers'];
-        $newServer['numplayers'] = $server['gq_numplayers'];
-        $newServer['online'] = $server['gq_online'];
+        $newServer['hostname']    = $server['gq_hostname'];
+        $newServer['type']        = $server['gq_gametype'];
+        $newServer['joinlink']    = $server['gq_joinlink'];
+        $newServer['maxplayers']  = $server['gq_maxplayers'];
+        $newServer['numplayers']  = $server['gq_numplayers'];
+        $newServer['online']      = $server['gq_online'];
         R::store($newServer);
         echo "\tAdded: {$server['gq_hostname']}\n";
     } else {
         $serverCheck['lastupdated'] = time();
-        $serverCheck['hostname'] = $server['gq_hostname'];
-        $serverCheck['type'] = $server['gq_gametype'];
-        $serverCheck['joinlink'] = $server['gq_joinlink'];
+        $serverCheck['hostname']   = (!empty($server['gq_hostname'])) ? $server['gq_hostname'] : $serverCheck['hostname'];
+        $serverCheck['type']       = (!empty($server['gq_gametype'])) ? $server['gq_gametype'] : $serverCheck['type'];
+        $serverCheck['joinlink']   = $server['gq_joinlink'];
         $serverCheck['maxplayers'] = $server['gq_maxplayers'];
         $serverCheck['numplayers'] = $server['gq_numplayers'];
-        $serverCheck['online'] = $server['gq_online'];
+        $serverCheck['online']     = $server['gq_online'];
         R::store($serverCheck);
         echo "\tUpdated: {$server['gq_hostname']}\n";
     }

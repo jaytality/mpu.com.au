@@ -21,7 +21,7 @@
                         <div class="card-body">
                             <p class="card-text text-center">
                                 <small>
-                                    Jaytizzle (Jay)
+                                    Jaytee (Jay)
                                 </small>
                             </p>
                         </div>

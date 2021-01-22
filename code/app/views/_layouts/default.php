@@ -10,8 +10,10 @@
     <link href="/public/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
 
     <link href="/public/css/style.css?<?=uniqid()?>" rel="stylesheet">
+    <link href="/public/css/datatables.css?<?=uniqid()?>" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -74,6 +76,8 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
     <script src="/public/js/app.js?<?=uniqid()?>"></script>
 
 </body>

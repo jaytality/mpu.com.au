@@ -74,4 +74,46 @@
             </ul>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col">
+            <hr />
+            <h3>Statistics</h3>
+
+            <h5 class="text-muted">Solos/Duos|Weekly|No BP Wipe|Low Upkeep</h5>
+            <table id="soloStats" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Kills</th>
+                        <th>Deaths</th>
+                        <th>Suicides</th>
+                        <th>Shots Fired</th>
+                        <th>Headshots</th>
+                        <th>Crafted</th>
+                        <th>Repaired</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    foreach ($soloplayers as $player) {
+                        $stats = json_decode($player['StatisticsDB']);
+                        ?>
+                        <tr>
+                            <td><?=$player['name']?></td>
+                            <td><?=$stats->Kills?></td>
+                            <td><?=$stats->Deaths?></td>
+                            <td><?=$stats->Suicides?></td>
+                            <td><?=$stats->Shots?></td>
+                            <td><?=$stats->Headshots?></td>
+                            <td><?=$stats->CraftedItems?></td>
+                            <td><?=$stats->RepairedItems?></td>
+                        </tr>
+                        <?php
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>

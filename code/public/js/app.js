@@ -15,3 +15,7 @@ $(document).click(function() {
     $(".dropdown-content").hide();
     $("div[class^='dropdown-']").hide();
 });
+
+$(document).ready( function () {
+    $('#soloStats').DataTable();
+});

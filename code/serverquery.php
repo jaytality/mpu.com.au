@@ -31,12 +31,12 @@ $serverList = [
         'id'   => 'csbloodstrike',
     ],[
         'type' => 'rust',
-        'host' => '182.160.156.47:29015',
-        'id'   => 'rustvanilla',
-    ],[
-        'type' => 'rust',
         'host' => '182.160.156.47:28017',
         'id'   => 'solos',
+    ],[
+        'type' => 'rust',
+        'host' => '182.160.156.47:28025',
+        'id'   => 'monthly',
     ]
 ];
 

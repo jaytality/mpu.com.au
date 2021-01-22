@@ -61,6 +61,8 @@ foreach ($servers as $server) {
         $newServer['joinlink']    = $server['gq_joinlink'];
         $newServer['maxplayers']  = $server['gq_maxplayers'];
         $newServer['numplayers']  = $server['gq_numplayers'];
+        $newServer['byline']      = null;
+        $newServer['description'] = null;
         $newServer['online']      = $server['gq_online'];
         R::store($newServer);
         echo "\tAdded: {$server['gq_hostname']}\n";

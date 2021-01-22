@@ -13,6 +13,16 @@ class GameModel extends Model
         $servers = R::find('game_servers');
         return $servers;
     }
+
+    public static function getServersByType($type = '')
+    {
+        if (empty($type)) {
+            return null;
+        }
+
+        $servers = R::find('game_servers', ' WHERE type = ?', [ $type ]);
+        return $servers;
+    }
 }
 
 // end of file

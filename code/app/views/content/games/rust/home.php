@@ -118,7 +118,7 @@
             </table>
             <br />
             <h5 class="text-muted">Monthly|No BP Wipe|Low Upkeep</h5>
-            <table id="soloStats" class="table table-hover">
+            <table id="monthlyStats" class="table table-hover">
                 <thead>
                     <tr>
                         <th>Player</th>

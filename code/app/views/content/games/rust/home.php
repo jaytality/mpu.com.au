@@ -116,6 +116,47 @@
                     ?>
                 </tbody>
             </table>
+            <br />
+            <h5 class="text-muted">Monthly|No BP Wipe|Low Upkeep</h5>
+            <table id="soloStats" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Updated</th>
+                        <th>Kills</th>
+                        <th>Deaths</th>
+                        <th>Suicides</th>
+                        <th>Shots Fired</th>
+                        <th>Headshots</th>
+                        <th>Crafted</th>
+                        <th>Repaired</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    foreach ($monthlyplayers as $player) {
+                        $stats = json_decode($player['StatisticsDB']);
+                        ?>
+                        <tr>
+                            <td><?=$player['name']?></td>
+                            <td>
+                                <small>
+                                    <?=date('d/M/Y H:i:s', $stats->LastUpdate)?>
+                                </small>
+                            </td>
+                            <td class="text-center"><?=$stats->Kills?></td>
+                            <td class="text-center"><?=$stats->Deaths?></td>
+                            <td class="text-center"><?=$stats->Suicides?></td>
+                            <td class="text-center"><?=$stats->Shots?></td>
+                            <td class="text-center"><?=$stats->Headshots?></td>
+                            <td class="text-center"><?=$stats->CraftedItems?></td>
+                            <td class="text-center"><?=$stats->RepairedItems?></td>
+                        </tr>
+                        <?php
+                    }
+                    ?>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

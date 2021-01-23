@@ -18,4 +18,5 @@ $(document).click(function() {
 
 $(document).ready( function () {
     $('#soloStats').DataTable();
+    $('#monthlyStats').DataTable();
 });

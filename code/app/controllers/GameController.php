@@ -25,11 +25,16 @@ class GameController extends Controller
     function game($game = '')
     {
 		$this->viewOpts['page']['layout'] = 'default';
-        $this->viewOpts['page']['content'] = 'games/index';
+        $this->viewOpts['page']['content'] = 'games/' . $game . '/home';
         $this->viewOpts['page']['section'] = 'games';
         $this->viewOpts['page']['title'] = $game;
 
         $this->view->load($this->viewOpts, $this->viewData);
+    }
+
+    function exists($slug = '')
+    {
+        return file_exists(__DIR__ . '/../views/content/games/' . $slug . '/');
     }
 }
 

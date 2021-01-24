@@ -22,10 +22,16 @@ class PageController extends Controller
         $this->viewData['page'] = $page;
 
         $this->viewOpts['page']['layout']  = 'default';
-
         if (empty($page)) {
-            $home = new \spark\Controllers\HomeController;
-            $home->index();
+            $game = new \spark\Controllers\GameController;
+            $gamename = explode('-', $slug);
+            if ($game->exists($gamename[1])) {
+                $game->game($gamename[1]);
+            } else {
+                $home = new \spark\Controllers\HomeController;
+                $home->index();
+            }
+
         } else {
             $this->viewOpts['page']['content'] = 'home/page';
 

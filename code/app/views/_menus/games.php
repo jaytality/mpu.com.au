@@ -43,6 +43,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/game/warzone">Call of Duty: Warzone</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/game/lol">League of Legends</a>
+                    </li>
                 </ul>
             </div>
         </div>

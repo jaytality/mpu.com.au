@@ -17,6 +17,10 @@ $(document).click(function() {
 });
 
 $(document).ready( function () {
-    $('#soloStats').DataTable();
-    $('#monthlyStats').DataTable();
+    $('#soloStats').DataTable({
+        "order": [[ 1, "desc" ]]
+    });
+    $('#monthlyStats').DataTable({
+        "order": [[ 1, "desc" ]]
+    });
 });

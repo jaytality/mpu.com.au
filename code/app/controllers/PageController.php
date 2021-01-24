@@ -24,9 +24,9 @@ class PageController extends Controller
         $this->viewOpts['page']['layout']  = 'default';
         if (empty($page)) {
             $game = new \spark\Controllers\GameController;
-            $gamename = explode('-', $slug);
-            if ($game->exists($gamename[1])) {
-                $game->game($gamename[1]);
+            $gamename = str_replace('game-', '', $slug);
+            if ($game->exists($gamename)) {
+                $game->game($gamename);
             } else {
                 $home = new \spark\Controllers\HomeController;
                 $home->index();

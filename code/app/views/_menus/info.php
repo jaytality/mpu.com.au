@@ -9,13 +9,10 @@
                         <a class="nav-link" href="/about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/history">History</a>
+                        <a class="nav-link" href="/history">History &amp; Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/staff">Our Staff</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/events">Events</a>
                     </li>
                 </ul>
             </div>

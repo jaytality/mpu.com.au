@@ -16,7 +16,7 @@ class HomeController extends Controller
 {
     function index()
     {
-        $this->viewData['posts'] = BlogModel::getPosts();
+        $this->viewData['posts'] = BlogModel::getPosts(3);
         $this->viewData['servers'] = GameModel::getServersInfo();
 
 		$this->viewOpts['page']['layout']  = 'default';

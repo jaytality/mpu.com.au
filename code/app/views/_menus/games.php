@@ -14,6 +14,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/game/minecraft">Minecraft</a>
                     </li>
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link" href="/game/quake3">Quake 3</a>
                     </li>
@@ -23,6 +24,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/game/ut2004">Unreal Tournament 2004</a>
                     </li>
+                    -->
                     <li class="nav-item">
                         <a class="nav-link" href="/game/rust">Rust</a>
                     </li>

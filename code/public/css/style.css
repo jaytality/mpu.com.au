@@ -45,3 +45,11 @@ hr {
 .card-body strong {
     color: #ff7a6d;
 }
+
+/*
+ * hero banner
+ */
+.hero-banner {
+    height: 480px;
+    background: center top url("../img/herobg.jpg");
+}

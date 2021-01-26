@@ -1,3 +1,14 @@
+<div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-dark hero-banner">
+    <div class="col-md-5 p-0 mx-auto my-5">
+        <img src="/public/img/logo.png" alt="Multiplayer United">
+        <h1 class="display-5 fw-normal">We are Multiplayer United</h1>
+        <p class="lead fw-normal">
+            Est. 1997 - we're one of Australia's oldest gaming communities! From classic BYO LAN parties, exhibitions,
+            to online multiplayer gaming; we promote fair play, and some great gaming adventures!
+        </p>
+    </div>
+</div>
+
 <br />
 
 <div class="container">

@@ -3,6 +3,8 @@
  * serverquery
  * scans the servers - and dumps their info the database so that it can be scanned by the regular
  * website page
+ *
+ * @author Johnathan Tiong <johnathan.tiong@mpu.com.au>
  */
 
 // root constant
@@ -64,8 +66,14 @@ foreach ($servers as $server) {
         $newServer['byline']      = null;
         $newServer['description'] = null;
         $newServer['online']      = $server['gq_online'];
-        R::store($newServer);
+        $newServerId = R::store($newServer);
         echo "\tAdded: {$server['gq_hostname']}\n";
+
+        // new server - record player count for the first time
+        $serverStats = R::xdispense('game_servers_stats');
+        $serverStats['lastupdated'] = time();
+        $serverStats['server'] = $newServerId;
+        $serverStats['playercount'] = $server['gq_numplayers'];
     } else {
         $serverCheck['lastupdated'] = time();
         $serverCheck['hostname']   = (!empty($server['gq_hostname'])) ? $server['gq_hostname'] : $serverCheck['hostname'];
@@ -76,7 +84,21 @@ foreach ($servers as $server) {
         $serverCheck['online']     = $server['gq_online'];
         R::store($serverCheck);
         echo "\tUpdated: {$server['gq_hostname']}\n";
+
+        $serverStatCheck = R::findAll('game_servers_stats', ' ORDER BY lastupdated DESC LIMIT 1');
+
+        if (
+            (empty($serverStatCheck))
+            || ((time() - $serverStatCheck['lastupdated']) >= 3600)  // hour or so since last stat update
+        ) {
+            //insert a new historical record
+            $serverStats = R::xdispense('game_servers_stats');
+            $serverStats['lastupdated'] = time();
+            $serverStats['server'] = $serverCheck['id'];
+            $serverStats['playercount'] = $server['gq_numplayers'];
+        }
     }
+    R::store($serverStats);
 }
 
 echo 'Finished!' . PHP_EOL;

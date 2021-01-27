@@ -88,7 +88,7 @@
                     <ul>
                         <li><b class="text-warning">No glitching, hacking, ban evasion</b> - straight to ban.</li>
                         <li><b class="text-warning">Do not impersonate Admins, or Abuse them</b> - they're there to help you out with any issues, everyone is playing for fun</li>
-                        <li><b class="text-warning">Do not be racist, sexist, etc.</b> - that'll result in being muted instantly</li>
+                        <li><b class="text-warning">Do not be racist, sexist, etc.</b> - that'll result in a 3 day ban, instantly</li>
                         <li><b class="text-warning">No racist symbols/signs</b> - it's 2021, stop that. Admins will remove these without warning, do it more than once and it's by Admin discretion if you're banned.</li>
                         <li><b class="text-warning">No Advertising</b> - bannable offense. You're on our servers to have fun, and play Rust</li>
                         <li><b class="text-warning">No Real Life Threats</b> - if someone says they're "going to f*** your mum" in global chat, that's not a real threat. We're talking about if you're getting tracked down and hunted IRL. Contact the proper authorities, and let us know, we can provide connection info to them.</li>

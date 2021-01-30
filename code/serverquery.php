@@ -39,6 +39,10 @@ $serverList = [
         'type' => 'rust',
         'host' => '182.160.156.47:28025',
         'id'   => 'monthly',
+    ],[
+        'type' => 'minecraft',
+        'host' => '182.160.156.47:25565',
+        'id'   => 'mcsurvival',
     ]
 ];
 

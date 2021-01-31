@@ -23,21 +23,21 @@
             <div class="col-md-4">
                 <h5>Game (+ Server) Related</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="/blog/cstrike">Counter-Strike</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="/blog/csgo">Counter-Strike: Global Offensive</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/blog/minecraft">Minecraft</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="/blog/quake3">Quake 3</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/blog/ut2004">Unreal Tournament 2004</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="/blog/rust">Rust</a>
                     </li>

@@ -6,6 +6,14 @@ $base->get("/game", function () {
     return $controller->{'page'}('game');
 });
 
+// Minecraft
+// GET /game/minecraft
+$base->get("/game/minecraft", function () {
+    $controller = new spark\Controllers\MinecraftController;
+    return $controller->{'home'}();
+});
+
+// Rust
 // GET /game/rust
 $base->get("/game/rust", function () {
     $controller = new spark\Controllers\RustController;

@@ -5,16 +5,16 @@
             <div class="col-md-6">
                 <h5>With Our Dedicated Servers</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="/game/cstrike">Counter-Strike</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="/game/csgo">Counter-Strike: Global Offensive</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/game/minecraft">Minecraft</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="/game/quake3">Quake 3</a>
                     </li>
                     <li class="nav-item">
@@ -22,7 +22,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/game/ut2004">Unreal Tournament 2004</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="/game/rust">Rust</a>
                     </li>

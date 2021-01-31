@@ -31,18 +31,18 @@
             <div class="col-md-6">
                 <h5>We Host and Organise</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="/game/amongus">Among Us</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="/game/apex">Apex Legends</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/game/overwatch">Overwatch</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="/game/warzone">Call of Duty: Warzone</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="/game/lol">League of Legends</a>
                     </li>

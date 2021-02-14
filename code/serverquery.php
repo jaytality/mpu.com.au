@@ -24,14 +24,6 @@ R::ext('xdispense', function ($type) {
 
 $serverList = [
     [
-        'type' => 'cs16',
-        'host' => '182.160.156.47:27016',
-        'id'   => 'csgungame',
-    ],[
-        'type' => 'cs16',
-        'host' => '182.160.156.47:27015',
-        'id'   => 'csbloodstrike',
-    ],[
         'type' => 'rust',
         'host' => '182.160.156.47:28017',
         'id'   => 'solos',
